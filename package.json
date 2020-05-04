@@ -15,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/edusssrdo/phaser-mmo/issues"
   },
+  "private": true,
   "homepage": "https://github.com/edusssrdo/phaser-mmo#readme",
   "workspaces": [
     "packages/*"
