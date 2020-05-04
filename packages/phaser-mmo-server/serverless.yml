@@ -12,8 +12,20 @@ provider:
   stage: dev # setting the env stage to dev, this will be visible in the routes
 
 functions:
-  hello:
-    handler: handler.hello
+  websocket:
+    handler: src/websocketHandler.handler
+    events:
+      - websocket:
+          # Handles new connection requests
+          route: $connect
+
+      - websocket:
+          # Handles all unrouted messages
+          route: $default
+
+      - websocket:
+          # Handles disconnect messages
+          route: $disconnect
 
 plugins:
   - serverless-plugin-typescript
