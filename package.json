@@ -1,36 +1,22 @@
 {
   "name": "phaser-mmo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html -p 8000",
-    "build": "parcel build src/index.html --out-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edusssrdo/phaser-mmo.git"
+    "url": "git+https://github.com/edusssrdo/phaser-mmo.git"
   },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
-    "eslint": "^6.8.0",
-    "minimist": ">=1.2.2",
-    "parcel-plugin-clean-easy": "^1.0.2",
-    "parcel-plugin-static-files-copy": "^2.2.1",
-    "typescript": "^3.8.3"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edusssrdo/phaser-mmo/issues"
   },
-  "dependencies": {
-    "phaser": "^3.22.0"
-  },
-  "parcelCleanPaths": [
-    "dist"
-  ],
-  "staticFiles": {
-    "staticPath": "public",
-    "watcherGlob": "**"
-  }
+  "homepage": "https://github.com/edusssrdo/phaser-mmo#readme",
+  "workspaces": [
+    "packages/*"
+  ]
 }
